@@ -1,0 +1,16 @@
+document.getElementById("contactForm").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let name = document.getElementById("name").value;
+    let email = document.getElementById("email").value;
+    let message = document.getElementById("message").value;
+    let msg = document.getElementById("msg");
+
+    if(name === "" || email === "" || message === "") {
+        msg.style.color = "red";
+        msg.textContent = "Please fill all fields!";
+    } else {
+        msg.style.color = "lightgreen";
+        msg.textContent = "Form submitted successfully!";
+    }
+});

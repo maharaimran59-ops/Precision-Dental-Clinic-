@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+header {
+    background: #f5f5f5;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    font-size: 34px;
+    color: #9b6b6b;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 15px;
+    color: #555;
+    font-weight: 500;
+}
+
+nav a:hover {
+    color: #9b6b6b;
+}
+
+/* HERO */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1588776814546-1ffcf47267a5') center/cover;
+    color: white;
+    text-align: center;
+    padding: 140px 20px;
+}
+
+/* CARDS */
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    width: 230px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+}
+
+/* FORM */
+form {
+    flex: 1;
+    min-width: 280px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 10px;
+    border: none;
+    background: #eee;
+}
+
+input:focus, textarea:focus {
+    outline: 2px solid #9b6b6b;
+}
+
+button {
+    background: #9b6b6b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #7f4f4f;
+}
+
+/* CONTACT LAYOUT */
+.contact-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+} 
